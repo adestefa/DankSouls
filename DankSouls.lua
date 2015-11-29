@@ -1,51 +1,43 @@
 --[[
-=======================================
+============================================
     Dank Souls v1.0  1:43 AM 10/21/2015
-	- That escallated quickly!
-=======================================
+	- Volume I: Consequences - by CoreLogic
+=============================================
 
-	[What is it?]
+	<b>[What is it?]</b>
 	A fun mod that transforms GTA V into a new, harder game without cops that really doesn't like you (think Dark Souls I)
 	
-	[Prepare to die!] 
-	The Dark Souls of GTA V. Instead of the player being undead, the peds are.
-	Every ped you kill (soul), gives me three tries (Dank Souls) to kill you. Play against me and see how long you can stay alive. 
-	
-	GTA V turns into a completely different experience.
+	<b>[Prepare to die!]</b>
+	The Dark Souls of GTA V. Every ped you kill (soul), gives me three tries (Dank Souls) to kill you. Play against me and see how long you can stay alive. 
 	
 	Note: If you stay the model citizen, nothing will happen. In fact, you can do whatever you want, the cops will never show up if crash or shoot around. 
 		  The game starts when you make a kill, or a ped dies near you.
 		
-	[Manual]	
+	<b>[Manual]</b>
 	Dank Souls is a fun new way to play GTA V without cops. I set out to design a mod that will turn your kills into my army.
-	The core idea behind this mod started when I noticed that in GTA in general, each pedestrian's death really goes unavenged. After playing for so many years, the police now are a boring response. 
-	
-	Instead, what if I could use dead peds and change them into a series of custom AI foes, each leading up to a mini-boss fight.
+	What if I could use dead peds and change them into a series of custom AI foes, each leading up to a mini-boss fight.
 	
 	A series of foes from a single ped's death is called a "Wave". Each wave has three MFs, the last being the boss.
 	Instead of the undead zombie games, think Asteroids. The more you hit, the more you have to clean up, and the harder it gets to do it!
 	Exactly like Asteroids, using simple rules we get interesting complex gameplay just starting with a few kills. 
 	
-	The end result is, the more you kill--the harder you fight, the harder the game will fight back.
-	Instead of the cops showing up, you will know exactly where Dank Souls will spawn, this becomes part of the fun.
-	
+	The end result is, the more you kill--the harder you fight, the harder the game will fight back. 
 	
 			
-	[Rules]
+	<b>[Rules]</b>
 	- After you kill any ped, you hand their soul over to me.
 	- Every ped you kill will now turn into a Dank Soul and give me three tries to kill you.
 	- Each dead ped lets me spawn a Wave (made up of 3 succesive enemies over 5 levels of difficulty)
 	- The last enemy in a wave is a boss that will get right to business, so be ready!
 
-    [Game Play]	
+      <b> [Game Play]</b>	
 	Each kill you make now has consequences. 
 	When the Wave counter reaches zero it is my turn. At timed intervals (waves) I am allowed to make my move and reclaim the dead into my army. 
 		
-	
-	[Your turn]
+     <b>[Your turn]</b>
 	Kill any number of nearby peds before the Wave timer runs out.
 	
-    [My turn]
+    <b>[My turn]</>
 	Starts when the Wave timer reaches zero (located at the center bottom of the game screen).
     At the end of each wave countdown, my complex move consists of the following:
 	  1) turn any dead peds into Zombies
@@ -53,10 +45,10 @@
 	  3) turn any dead demons into bosses
 	  4) drop resources for each dead enemy type
 	
-	Example HellSpawn Wave started by killing a single ped:
+	Example Dank Wave started by killing a single ped:
 	  [Ped] -> [Zombie] -> [Demon] -> [Boss] -> [Resource drops!]
 	
-	[Wave countdown]
+	<b>[Wave countdown]</b>
 	Depending on the level, the wave timer may count down from 300 and slowing get faster and faster. 
     
 	Note: the UI will flash 3 times when the wave is about to end, so you can focus on fighting and still know when a wave is ending without looking. 
@@ -66,95 +58,106 @@
 	Reach the boss of each wave, kill him for needed armor and rocket ammo.
 
 		
-	[Know Thy Enemy]	
+	<b>[Know Thy Enemy]</b>	
 	Each killed ped will spawn a single wave of Dank Souls.
 				
-	A single Wave consists of three characters:
+	<b>A single Wave consists of three Dank Souls</b>
 	- First  Zombie (white  blip #1)
 	- Second Demon  (orange blip #2)
 	- Third  Boss   (pink   blip #3)
 	
-	[Meet the Dank Souls]	
-	Zombie:  Simple minded, starts with pistol on lower levels with varing accuracy. Watch out, they can be deadly in packs!
+	<b>[Meet the Danks]</b>
+	Zombie:  Simple minded, starts with pistol on lower levels with varying accuracy. Watch out, they can be deadly in packs!
 	 - Drops: Money, health, pistol/rifle ammo
 	
-	Demon: More aggressive, they start with AR-15 and get a granade launcher and rockets in later levels. Watch your back, they will be out front if around.
-	 - Drops: Money, health, rifle/granade ammo
+	Demon: More aggressive, they start with AR-15 and get a grenade launcher and rockets in later levels. Watch your back, they will be out front if around.
+	 - Drops: Money, health, rifle/grenade ammo
 	 
 	Boss: Mean as it gets. Will hang back more and lurk sending a rocket your way when you lest expect if if you are not careful. Manage these guys carefully. They don't fuck around. If you are not anticipating where and when each boss is spawning around you, you are hopelessly doomed. The only weakness they have is at lower level they have very bad aim, that said, rockets have a big blast area. Use the lower level Bosses to train for target management you will need in later levels. Use that Mini-map or die!
 	 - Drops: Money, health, Armour, rocket ammo
 	
-	Each will drop resources when killed, guns, ammo, money, health.. but a boss will also drop armour and rockets.
-	Dank Souls start out with limited accuracy and weapons, but will quickly become more accurate and deadly as you level up.
+	Each will drop resources when killed, guns, ammo, money, health.. but a boss will also drop Armour and rockets.
+	Danks start out with limited accuracy and weapons, but will quickly become more accurate and deadly as you level up.
 
-    Only five levels of difficulty and infinate long play. 
+    Only five levels of difficulty and infinite long play. 
 	Each level will bring new enemy abilities and a single vehicle as a reward. Use it wisely, even a tank is no match for a gang of Bosses.
 	
 	There are only five levels of AI difficulty and are tied to how many waves you have completed.
 	The more Dank Souls you are fighting at once, and the move waves you complete (bosses) the faster you will level up and the harder they will become.	
 
-	[Levels]
-	1) <5 waves:  Veh: Bike, Enemies: Lower accuracy, simple weapons         (training) 
-	2) <10 waves: Veh: Bulldozer, Enemies:improved accuracy, more aggressive (training)
-	3) <15 waves: Veh: Tank, Enemies: New weapons, better accuracy, faster waves!
-	4) <20 waves: Veh: Annihilator, Enemies: Really insane now, better take it slow, faster waves!
-	5) >30 waves: Veh: Annihilator, Enemies: Impossible to stay alive. Instant waves. Good Luck.
+	<b>[Levels]</b>
+	1) <5 waves:  1 Bike, Enemies: Lower accuracy, simple weapons         (training) 
+	2) <10 waves: 1 Bulldozer, Enemies:improved accuracy, more aggressive (training)
+	3) <15 waves: 1 Tank, Enemies: New weapons, better accuracy, faster waves!
+	4) <20 waves: 1 Annihilator, Enemies: Really insane now, better take it slow, faster waves!
+	5) >30 waves: 1 Annihilator, Enemies: Impossible to stay alive. Instant waves. Good Luck.
 	
 	
-	[Strategy]
+	<b>[Strategy]</b>
 	This mini-game is all about resource and target management. COD run-and-gun will be chewed up quickly here if you kill more than one ped at a time. 
 	Only the smart and determined, who use all their weapons and mini-map, ploting each kill and it's consequences will stay alive.
 		
 	This Mod is not for the faint of heart. The harder you fight me, the harder I fight back. The more you kill, the more you have to kill.
 	For those sick of fighting the cops, this mod is for you. The slower you fight the easier the system will respond. Light up a whole block on level 3 and up and you have an army ready to skull fuck you.
 	
-	"That escallated quickly" is heard a lot when playing. 
+	"That escalated quickly" is heard a lot when playing. 
 	The logic starts off easy and becomes ruthless and smart quickly as you level up, don't be fooled even a tank will have a challenge when a few Bosses are around.
 	
-	[Tips]
+	<b>[Tips]</b>
 	 - There are no cops, do whatever you want
 	 - If you make no kills nothing will happen
 	 - When you do kill, manage how many waves you start. 
-	 - Watch the Wave count down timer. when it reaches zero, be in cover as all dead will be resurrected.
-	 - An audiable deep sound will fire for each new Dank Soul. Use this as another clue just how many new enemies are around.
-	 - Use the mini-map, it is critical for survival, solid color blips are dead, the ones with numbers are real targets
+	 - Watch the Wave count down timer. when it reaches zero, all dead will be resurrected.
+	 - An audible deep sound will fire for each new Dank. Use this as another clue just how many new enemies are around.
+	 - Use the mini-map, solid color blips are dead, the ones with numbers are real targets
 	 - watch out for #3s! (bosses)
 	 - Blip colors: white: zombie, orange: demon, pink: boss
-	 - Use the topograhpy to your advatage, cover, cover, cover, but don't be too far from pickups after finihing a wave.
+	 - Use the topography to your advantage, cover, cover, cover, but don't be too far from pickups after finishing a wave.
 	 - Watch all sides!
 	 - Just like the real Dark Souls, lure packs into choke points and pick off one at a time. 
-	 - Rockets and granade launchers at higher levels can be insane. Plan accordongly. 
-	 - Pace yourself! Just like running too far ahead in Dark Souls, sometimes you simply kill too many peds and death is inevetable. 
-	 - Lower levels are easier for training, don't be fooled it is impossible on level 5.
-	 - Dank Souls are gonna kick your ass. I warned you.
+	 - Rockets and grande launchers at higher levels can be insane. Plan accordingly. 
+	 - Pace yourself! Just like running too far ahead in Dark Souls, sometimes you simply kill too many peds and death is inevitable. 
+	 
+	 I'm gonna kick your ass. I warned you.
 
 	[Installation]
 	 1. Install Script Hook https://www.gta5-mods.com/tools/script-hook-v
 	 2. Install the LUA script plugin for Scripthook https://www.gta5-mods.com/tools/lua-plugin-for-script-hook-v
-	 3. Download the HB file
-	 4. Put the <b>DS.lua</b> file in your <install dir>\Grand Theft Auto V\scripts\addins folder.
+	 3. Download the DankSouls.lua file
+	 4. Put the <b>DankSouls.lua</b> file in your <install dir>\Grand Theft Auto V\scripts\addins folder.
 	 5. Text will appear above the mini-map when installed correctly
 
 	 
 	[Thanks]
 	Rockstar, for giving us a masterpiece. The guys that make OpenIV, and Alexander Blade who are both absolute treasures to the modding world of GTA and the modding community for creating such a great place in an insane world.
  -------------------------------
- version 1.0 10/21/2015
+ version 1.9.6.9 10/21/2015
   - base version
+ version 1.9.7.1 11/29/2015
+   - Mayhem now gets full load-out
+   - Wanted level now rises on all modes except Chicken
+   - Chicken game mode now has improved zombie spawn 
+   - Level 1 now gets Annihilator helicopter
+   - Level 5 now gets full load-out in all game modes  
+   - Fixed bug spawning helicopter on top of player
+   - Fixed bug spawned vehicles stay on map after game over
+   - Fixed death count bug on game over screen
+   - You can turn cops off by setting <b>DS.settings["cops_ignore"]</b>  to true
+ 
 ]]--
 local DS = {};
 --  Game Settings
 -- =================================
 DS.settings = {};
-DS.settings["health_as_a_resource"] = true;	-- Collect and carry health packs when true, drop on dead Danks when false
-DS.settings["cops_ignore"] = false;			-- Leave set to true, unless you want absolute insanity
-DS.settings["key_1"]=49; 					-- Game mode 1 activation key (set to '1' by default)
-DS.settings["key_2"]=50; 					-- Game mode 2 activation key (set to '2' by default)
-DS.settings["key_3"]=51; 					-- Game mode 3 activation key (set to '3' by default)
-DS.settings["key_help"]=72;					-- Game help screen activation key (set to 'h' by default)
+DS.settings["health_as_a_resource"] = false;	-- Collect and carry health packs when true, drop on dead Danks when false
+DS.settings["cops_ignore"] = false;				-- A lot easier without the cops, set as you like
+DS.settings["key_1"]=49; 						-- Game mode 1 activation key (set to '1' by default)
+DS.settings["key_2"]=50; 						-- Game mode 2 activation key (set to '2' by default)
+DS.settings["key_3"]=51; 						-- Game mode 3 activation key (set to '3' by default)
+DS.settings["key_help"]=72;						-- Game help screen activation key (set to 'h' by default)
 -- ==================================================
 -- ==================================================
--- ===== EDIT BELOW AT OWN RISK! (may breaking game)
+-- ===== EDIT BELOW AT OWN RISK! ====================
 -- ==================================================
 -- ==================================================
 DS.settings["dialog_cooldown"] = 750;
@@ -240,7 +243,7 @@ DS.settings["level_chicken_spawn_distance"][5] = 25.0;
 --  Game State Registers (run-time)
 -- =================================
 DS.data = {};
-DS.data["version"] = "1.9.6.9";
+DS.data["version"] = "1.9.7.1";
 DS.data["seenPeds"] = {};
 DS.data["seenPedSkins"] = {};
 DS.data["seenAllPeds"] = {};
@@ -258,7 +261,7 @@ DS.data["game_over"] = false;
 DS.data["bad_coords"] = false;
 DS.data["health_count"] = 0;
 DS.data["active_threat"] = "";
-DS.data["cops_ignore"] = true;
+DS.data["settings_ignore"] = true;
 DS.data["level"] = 1;
 DS.data["score"] = 0;
 DS.data["deaths"] = 0;
@@ -284,6 +287,9 @@ DS.data["total_deaths"] = 1; -- should never be reset!
 DS.data["chicken_timer_up"] = false;
 DS.data["chicken_total"] = 0;
 DS.data["wave_progression"] = false;
+DS.data["has_flask"] = false; -- has player found health flask yet?
+DS.data["slow_time"] = false;
+DS.data["vehicles"] = {};
 -- Dank skins
 -- ==================
 DS.hell = {}
@@ -353,6 +359,7 @@ DS.toggle["godmode"] = false;
 DS.toggle["chicken_free_roam"] = false;
 DS.toggle["game_scanner"] = true;
 DS.toggle["chicken_is_loose"] = false;
+DS.toggle["health_flask"]=false;
 -- Utilities
 -- ==================
 function DS.showTip()
@@ -396,6 +403,7 @@ function DS.giveMoney(amount)
 		end
 		print("giveHealth::Health count:"..DS.data["health_count"]);
 	else
+		print("DS::giveHealth::"..amount);
 		-- health will drop on dead hellspawn
 		DS.dropHealth(amount, coord);
 	end
@@ -403,15 +411,19 @@ function DS.giveMoney(amount)
  -- drop health pack
  function DS.dropHealth(amount, coord)
     local hp = OBJECT.CREATE_AMBIENT_PICKUP(-1888453608, coord.x, coord.y, coord.z, 0, amount, 1, false, true);
-	print("give health:"..hp);
+	print("DS::dropHealth:health:"..hp);
  end
  -- spawn health on player from inventory
  function DS.spawnHealth()
     print("spawnHealth::Health count:"..DS.data["health_count"]);
+	-- player drinks health juice
 	if (DS.data["health_count"] > 0) then
 		DS.data["health_count"] = DS.data["health_count"] - 1;
 		local coord = ENTITY.GET_ENTITY_COORDS(PLAYER.PLAYER_PED_ID(), false);
 		DS.dropHealth(100, coord);
+		-- give invincibility
+		DS.godOn(5);
+		DS.godAddTime(500);
 	else
 		print("spawnHealth::not enough!");
 	end
@@ -452,7 +464,7 @@ end
 function DS.giveReward()
 	local level = DS.data["level"];
 	if (level == 1) then
-		DS.spawnVeh("akuma");
+		DS.spawnVeh("annihilator");
 		--DS.data["reward_vech_name"] = "Akuma Bike";
 	elseif(level == 2) then
 		DS.spawnVeh("bulldozer");
@@ -461,7 +473,7 @@ function DS.giveReward()
 		DS.spawnVeh("rhino");
 		--DS.data["reward_vech_name"] = "Tank";
 	elseif(level == 4) then
-		DS.spawnVeh("annihilator");
+		DS.spawnVeh("akuma");
 		--DS.data["reward_vech_name"] = "Annihilator";
 	elseif(level == 5) then
 		DS.spawnVeh("annihilator");
@@ -487,12 +499,13 @@ end
 function DS.spawnVeh(modelName) 
 	local skin = GAMEPLAY.GET_HASH_KEY(modelName);
 	local playerPed = PLAYER.PLAYER_PED_ID();
-	local coords = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(playerPed, 0.0, 5.0, 3.0);
+	local coords = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(playerPed, 0.0, 25.0, 2.0);
 	STREAMING.REQUEST_MODEL(skin)
 	while(not STREAMING.HAS_MODEL_LOADED(skin)) do
 		wait(1)
 	end
-	VEHICLE.CREATE_VEHICLE(skin, coords.x, coords.y, coords.z, ENTITY.GET_ENTITY_HEADING(playerPed), false,false);
+	local v = VEHICLE.CREATE_VEHICLE(skin, coords.x, coords.y, coords.z, ENTITY.GET_ENTITY_HEADING(playerPed), false,false);
+	table.insert(DS.data["vehicles"],v);
 	STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(skin);
 end
 -- draw text on screen
@@ -770,6 +783,8 @@ function DS.spawnDank(thisPed, skinhash, i)
 			DS.data["chicken"] = nil;
 			DS.toggle["chicken_is_loose"] =  false;
 			DS.data["game_scanner"] = false;
+			print("Chicken Killed, give health");
+			DS.giveHealth(100, coord);
 			local rtotal = 0;
 			if(DS.timer["chicken"] > 0) then
 				-- if timer is still running, give a bouns based on time left
@@ -801,7 +816,7 @@ function DS.spawnDank(thisPed, skinhash, i)
 				print("Done giving bounus");
 				local bonus = math.floor(DS.data["chicken_total"] * 100);
 				DS.giveMoney(bonus);
-				DS.giveHealth(100, coord);
+				
 			end	
 		-- dead zombie found, create a demon replacement
 		elseif (skinhash == DS.data["skinhash_zombie"]) then
@@ -941,16 +956,31 @@ function DS.spawnChickenAtLocation(coord)
 		--STREAMING.SET_MODEL_AS_NO_LONGER_NEEDED(skin_hash);
 		DS.data["chicken_in_play"] = true;
 		print("DS::spawnChicken::chicken total::"..DS.data["chicken_total"]);
+		
 		if(DS.data["chicken_total"] == 0) then
 			DS.data["chicken_zombies"] = DS.data["chicken_zombies"] + 1;
 			DS.playSound();
 			DS.Zombie(coord);
 			print("DS::spawnChicken::single zombie created:"..DS.data["chicken"]);
 		elseif(DS.data["chicken_total"] > 0) then	
+			local dx = 0.5;
+			local yx = 0.5;
 			for i=0, DS.data["chicken_total"] do
+				dx = dx + -2.5 * i;
+				dy = dy + 5.5 * i;
+				if(dx > 10.0) then
+					dx = 0.5;
+				end
+				if(dy > 10.0) then
+					dy = 0.5;
+				end
+				
+				print("chicken zombie coords:"..dx.." yx:"..yx);
+				local coords = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(clone, yx, dx, 1.0);
 				DS.data["chicken_zombies"] = DS.data["chicken_zombies"] + 1;
 				DS.playSound();
-				DS.Zombie(coord);
+				DS.Zombie(coords);
+				
 				print("DS::spawnChicken::multiple zombie:"..i.." created:"..DS.data["chicken"]);
 			end
 		end	
@@ -999,6 +1029,13 @@ function DS.killEmAll()
 		PED.DELETE_PED(DS.data["chicken"]);
 		DS.data["chicken_in_play"] = false;
 		DS.data["chicken"] = nil;
+	end
+	if(DS.data["vehicles"] ~= nil) then
+		for i=1, #DS.data["vehicles"] do
+			local thisCar = DS.data["vehicles"][i];
+			VEHICLE.DELETE_VEHICLE(thisCar);
+			print("deleting veh:"..thisCar);
+		end
 	end
 end
 -- ====================================================================
@@ -1152,32 +1189,23 @@ function DS.godAddTime(time_)
 	print("DS::godAddTime::"..time_);
 	DS.timer["godmode"] = DS.timer["godmode"] + time_; 
 end
-function DS.slowTime()
-	GAMEPLAY.SET_TIME_SCALE(50 / 100);
-end
-function DS.normalTime()
-	GAMEPLAY.SET_TIME_SCALE(100);
-end
 function DS.getScore()
 	local z = #DS.data["zombies"];
 	local d = #DS.data["demons"];
 	local b = #DS.data["bosses"];
 	local f = #DS.data["finished_wave"];
 	local p = #DS.data["seenPeds"];
-
-   --#TODO: define level over by # of killed types
 	local total_z = z * DS.settings["score_zombie"];
 	local total_d = d * DS.settings["score_demon"];
 	local total_b = b * DS.settings["score_boss"];
 	local total_hell_kills = f * 1; -- one for each Dank wave (sinner, zombie, demon, boss)
-
 	--total_hell_kills = total_hell_kills * RaptureDJ.settings["score_bonus_total_kills"];
 	local score = total_z + total_d + total_b + total_hell_kills;
 	--print("zombies:"..total_z.." Demons:"..total_d.." Bosses:"..total_b.." Bonus kills:"..total_hell_kills.."\nScore:"..score);
 	DS.data["score"] = score;
 end
 function DS.setupGame()
-	print("setupGame");
+	print("Dank Souls v"..DS.data["version"].." - Welcome to your doom");
 	-- let's initialize the wave counter delay (how long between Dank spawns) setting to the current level
 	DS.settings["deathCheckDelay"]  = DS.settings["level_deathCheckDelay"][DS.data["level"]];
 	DS.settings["dialog_cooldown"] = 750;
@@ -1186,8 +1214,7 @@ function DS.setupGame()
 	DS.data["demons"] = {};
 	DS.data["bosses"] = {};
 	DS.data["score"] = 0;
-	--DS.data["level"] = 1;
-	DS.data["cops_ignore"] = DS.settings["cops_ignore"];
+	DS.data["level"] = 1;
 	DS.data["blips"] = {};
 	DS.data["bad_coords"] = 0;
 	DS.data["skinhash_zombie"] = "nil";
@@ -1264,6 +1291,8 @@ function DS.tick()
 	local r_= 255;
 	local g_= 255;
 	local b_= 255;
+	PLAYER._SET_MOVE_SPEED_MULTIPLIER(playerPed, 20.25);
+	ENTITY.SET_ENTITY_MAX_SPEED(player, 200.0);
 	--local coords = ENTITY.GET_ENTITY_FORWARD_VECTOR(PLAYER.PLAYER_PED_ID());
 	--local fx = ENTITY.GET_ENTITY_FORWARD_X(PLAYER.PLAYER_PED_ID());
 	--local fy = ENTITY.GET_ENTITY_FORWARD_Y(PLAYER.PLAYER_PED_ID());
@@ -1346,10 +1375,10 @@ function DS.tick()
 				DS.toggle["spawn_dialog"] = true;
 				DS.timer["spawn_timer"] = 200;
 				DS.godOn(100);
+				DS.data["deaths"] = DS.data["deaths"] + 1;
 				--print(deathDetails);
 				if(DS.settings["game_mode"] == 2) then
 					--print("TICK::game mode 2, checking death..");
-					DS.data["deaths"] = DS.data["deaths"] + 1;
 					DS.data["total_deaths"] = DS.data["total_deaths"] + 1;
 					DS.data["lives"] = DS.data["lives"] - 1;
 					if (DS.data["lives"] == 0) then
@@ -1373,12 +1402,17 @@ function DS.tick()
 					DS.drawText(" [L] Last Bloodstain", 0.73, 0.0005, 0.37, false, 1, 255, 255, 0);
 				end
 			end
+			
 			-- get rid of the cops, (boring IMO)
 			-- =================================
-			--if(DS.data["cops_ignore"]) then
-				-- PLAYER.SET_MAX_WANTED_LEVEL(0);
-				-- PLAYER.CLEAR_PLAYER_WANTED_LEVEL(playerPed);
-			--end
+			if(DS.settings["cops_ignore"]) then
+				 PLAYER.SET_MAX_WANTED_LEVEL(0);
+				 PLAYER.CLEAR_PLAYER_WANTED_LEVEL(playerPed);
+			else
+				PLAYER.SET_MAX_WANTED_LEVEL(5);
+			end
+			
+			
 			-- CP: Game Mode
 			-- ==============
 			if(DS.settings["game_mode"] == 0) then
@@ -1392,7 +1426,7 @@ function DS.tick()
 					-- select game mode screen
 					-- ========================
 					DS.drawText("DANK SOULS",  0.1, 0.49, 3.0, true, 1, 0, 0, 0);
-					DS.drawText("Rip:1.9.6.9", 0.21, 0.68, 0.3, false, 1, 255, 255, 255);
+					DS.drawText("Rip:"..DS.data["version"], 0.21, 0.68, 0.3, false, 1, 255, 255, 255);
 					DS.drawText("by CoreLogic 2015", 0.24, 0.35, 0.5, false, 1, 255, 255, 255);
 					DS.drawText("[h]elp", 0.24, 0.63, 0.5, false, 1, 255, 255, 255);
 					DS.drawText("How do you want to die?", 0.34, 0.49, 1.0, true, 1, 0, 0, 0);
@@ -1402,7 +1436,7 @@ function DS.tick()
 					-- ============
 					-- center title and controls
 					DS.drawText("DANK SOULS",  0.1, 0.49, 3.0, true, 1, 0, 0, 0);
-					DS.drawText("Rip:1.9.6.9", 0.21, 0.68, 0.3, false, 1, 255, 255, 255);
+					DS.drawText("Rip:"..DS.data["version"], 0.21, 0.68, 0.3, false, 1, 255, 255, 255);
 					DS.drawText("by CoreLogic 2015", 0.24, 0.35, 0.5, false, 1, 255, 255, 255);
 					DS.drawText("[h] back", 0.24, 0.63, 0.5, false, 1, 255, 255, 255);
 					-- center column, game modes
@@ -1589,6 +1623,11 @@ function DS.tick()
 				DS.drawText(modeName.."\n Waves:"..#DS.data["finished_wave"].."\n Kills:"..kills.."\n Max-multi:"..DS.data["max_num_Dank"].."\n"..deathTally..chickenTally, 0.58, 0.00005, 0.3, false, 0, r_, g_, b_);
 				DS.drawText("LEVEL:"..DS.data["level"], 0.0, 0.05, 0.6, false, 0, r_, g_, b_);
 				DS.drawText("SCORE:"..DS.data["score"], 0.0, 0.76, 0.6, false, 0, r_, g_, b_);
+				--if(DS.settings["cops_ignore"])	then
+				--	DS.drawText("\"No Cops!\" - Edna Moles", 0.3, 0.00005, 0.2, false, 0, r_, g_, b_);
+				--else
+				--	DS.drawText("Cops on", 0.3, 0.00005, 0.2, false, 0, r_, g_, b_);
+				--end
 				-- DANK SCANNER
 				-- =============
 				-- scan and track all unique peds
@@ -1624,7 +1663,7 @@ function DS.tick()
 					DS.timer["deathCheck"] = DS.timer["deathCheck"] - 1;
 					if(DS.timer["deathCheck"] < 10) then
 						--DS.data["show_hud"] = false;
-						DS.drawText("MY TURN!", 0.94, 0.49, 0.49, false, 0, 255, 255, 0);
+						DS.drawText("DANK SPAWN!", 0.94, 0.49, 0.49, false, 0, 255, 255, 0);
 						wait(50); -- flash the UI (simple hack)
 					else
 						if(playerHealth < 170) then
@@ -1647,10 +1686,15 @@ function DS.tick()
 				if(DS.toggle["new_level_reached"]) then
 					if (DS.timer["new_level_reached"] < 500) then
 						DS.drawText("New Level!", 0.20, 0.49, 1.0, true, 1, 255, 255, 0);
+						if(DS.data["level"] == 2) then
+							DS.drawText("You found a dope Health Flask!\nDrink concentrate to get your groove back on.", 0.30, 0.49, 0.5, true, 0, 255, 0, 0);
+							DS.data["has_flask"] = true;
+						end
 						DS.timer["new_level_reached"] = DS.timer["new_level_reached"] + 1;
 					else
 						DS.timer["new_level_reached"] = 0;
 						DS.toggle["new_level_reached"] = false;
+						
 					end
 				end
 				-- give out reward
@@ -1665,8 +1709,9 @@ function DS.tick()
 							wait(2000);
 						end
 						if (DS.data["level"] == 1) then
-							DS.data["reward_vech_name"] = "Akuma Bike";
+							DS.data["reward_vech_name"] = "Annihilator";
 						elseif(DS.data["level"] == 2) then
+							DS.settings["health_as_a_resource"] = true;
 							DS.data["reward_vech_name"] = "Bulldozer";
 						elseif(DS.data["level"] == 3) then
 							DS.data["reward_vech_name"] = "Tank";
@@ -1678,6 +1723,9 @@ function DS.tick()
 						DS.drawText(" [k] Spawn "..DS.data["reward_vech_name"], 0.75, 0.0005, 0.37, false, 1, 255, 255, 0);
 					end
 				end
+				
+				--DS.drawText(" [N] Toggle time", 0.77, 0.0005, 0.37, false, 1, 255, 255, 0);
+				
 			else-- print("TICK::scanner_false");
 			end -- end scanner
 			-- ====================
@@ -1685,32 +1733,40 @@ function DS.tick()
 			-- ====================
 			-- Game Mode: Mayhem action key
 			if(get_key_pressed(DS.settings["key_1"])) then -- 1
-				print("1 key pressed");
-				print("Setting game mode to 1");
-				DS.settings["game_mode"] = 1;
-				DS.data["wave_progression"] = true;
-				DS.giveLoadout();
-				wait(1000);
+				if(DS.settings["game_mode"] == 0) then
+					print("1 key pressed");
+					print("Setting game mode to 1");
+					DS.settings["game_mode"] = 1;
+					DS.data["wave_progression"] = true;
+					DS.giveAllWeapons();
+					wait(1000);
+				end
 			end
 			-- Game Mode: HardCore action key
 			if(get_key_pressed(DS.settings["key_2"])) then -- 2
-				print("2 key pressed");
-				print("Setting game mode to 2");
-				DS.settings["game_mode"] = 2;
-				DS.data["lives"] = 3;
-				DS.data["wave_progression"] = true;
-				DS.giveLoadout();
-				wait(1000);
+				if(DS.settings["game_mode"] == 0) then				
+					print("2 key pressed");
+					print("Setting game mode to 2");
+					DS.settings["game_mode"] = 2;
+					DS.data["lives"] = 3;
+					DS.data["wave_progression"] = true;
+					DS.giveLoadout();
+					wait(1000);
+				end
 			end
 			-- Game Mode: Chicken action key
 			if(get_key_pressed(DS.settings["key_3"])) then -- 3
-				print("3 key pressed");
-				print("Setting game mode to 3");
-				WEAPON.GIVE_DELAYED_WEAPON_TO_PED(playerPed, GAMEPLAY.GET_HASH_KEY("WEAPON_ASSAULTSHOTGUN"), 200, false);
-				DS.settings["game_mode"] = 3;
-				DS.data["wave_progression"] = true;
-				DS.giveLoadout();
-				wait(1000);
+				if(DS.settings["game_mode"] == 0) then
+					print("3 key pressed");
+					print("Setting game mode to 3");
+					WEAPON.GIVE_DELAYED_WEAPON_TO_PED(playerPed, GAMEPLAY.GET_HASH_KEY("WEAPON_ASSAULTSHOTGUN"), 200, false);
+					DS.settings["game_mode"] = 3;
+					DS.data["wave_progression"] = true;
+					DS.settings["health_as_a_resource"] = false;
+					DS.settings["cops_ignore"] = true;
+					DS.giveLoadout();
+					wait(1000);
+				end
 			end
 			-- help screen action key
 			if(get_key_pressed(DS.settings["key_help"])) then -- h
@@ -1733,28 +1789,58 @@ function DS.tick()
 			end
 			-- Drink health juice action key
 			if(get_key_pressed(74)) then -- 'J'	
-				print("J pressed");
-				if (DS.data["health_count"] > 0) then
-					DS.spawnHealth();
-					wait(1000);
+				if(DS.settings["game_mode"] > 0) then
+					print("J pressed");
+					if (DS.data["health_count"] > 0) then
+						DS.spawnHealth();
+						wait(1000);
+					end
 				end
 			end	
 			-- last blood stain action key
 			if(get_key_pressed(76)) then -- 'L'
-				DS.godOn(500);
-				DS.teleport_to_coords_before_death()
-				print("L key pressed, teleport");
-				wait(1000);
+				if(DS.settings["game_mode"] > 0) then
+					DS.godOn(500);
+					DS.teleport_to_coords_before_death()
+					print("L key pressed, teleport");
+					wait(1000);
+				end
 			end
 			-- end game during Mayhem action key
 			if(get_key_pressed(32)) then -- space
-				print("space key pressed");
-				print("Setting game mode to end game");
-				if(DS.settings["game_mode"] == 1) then
-					DS.gameover();
+				if(DS.settings["game_mode"] > 0) then
+					print("space key pressed");
+					print("Setting game mode to end game");
+					if(DS.settings["game_mode"] == 1) then
+						DS.gameover();
+					end
+					wait(1000);
 				end
-				wait(1000);
 			end
+			-- ignore cops toggle action key
+			--if(get_key_pressed(78)) then -- 'N'
+				--if (DS.settings["cops_ignore"]) then
+				--	DS.settings["cops_ignore"] = false;
+				--	print("KeyPress::N::ignore_cops")
+				--else 
+				--	DS.settings["cops_ignore"] = true;
+				--	print("KeyPress::N::ignore_cops");    
+				--end
+				--wait(1000);
+			--end
+			--if(get_key_pressed(78)) then -- 'N'
+			--	local time_ = "normal";
+			--	if(DS.data["slow_time"]) then
+			--		DS.normalTime();
+			--		DS.data["slow_time"] = false;
+			--	else
+			--		DS.data["slow_time"] = true;
+			--		DS.slowTime();
+			--	end
+			--	wait(1000);
+			--end 
+			
+			 
 			--	if(get_key_pressed(74)) then -- j
 			--		if (DS.toggle["chicken_free_roam"]) then
 			--			DS.toggle["chicken_free_roam"] = false;
@@ -1768,6 +1854,29 @@ function DS.tick()
 		end	-- player exists and not dead
 	end -- playgame
 end -- tick
+function DS.force_carexplode()
+	local playerPed = PLAYER.PLAYER_PED_ID();
+	local PedTab,PedCount = PED.GET_PED_NEARBY_PEDS(playerPed, 1, 1);
+	local VehTab,VehCount = PED.GET_PED_NEARBY_VEHICLES(playerPed, 1);
+	local count = 0;
+	for k,v in ipairs(VehTab)do 
+		local PlayerVeh = PED.IS_PED_IN_VEHICLE(playerPed, v, false)
+		if(PlayerVeh == true)then
+		else
+			VEHICLE.EXPLODE_VEHICLE(v, true, true);
+			print("explode car");
+		end
+	end
+end
+function DS.liftPeds()
+	local range = 30;
+	local player = PLAYER.PLAYER_PED_ID() 
+	local pedTable1,Count = PED.GET_PED_NEARBY_PEDS(player, 1, 1);
+	for j,d in ipairs(pedTable1) do 
+		-- ped, forceType (1), x, y, z, xrot, yrot, zrot, (BOOLS)
+		ENTITY.APPLY_FORCE_TO_ENTITY(d, 1, -5, 5, 1, 0,0,0, true, false, true, true, true, true);
+	end
+end
 function DS.gameover()
 	print("DS::GAMEOVER mode:"..DS.settings["game_mode"]);
 	print("DS::GAMEOVER chickens:"..DS.data["chicken_total"]);
@@ -1781,12 +1890,19 @@ function DS.gameover()
 	DS.data["game_over"] = true;
     --DS.killEmAll();
 end
+function DS.slowTime()
+	GAMEPLAY.SET_TIME_SCALE(50 / 100);
+end
+function DS.normalTime()
+	GAMEPLAY.SET_TIME_SCALE(100);
+end
 function DS.unload()
 	DS.removeBlips();
     DS.killEmAll();
-	print("I was unloaded!");
+	print("Dank Souls was unloaded - See you in hell.");
 end
 function DS.onload()
-	print("I was loaded");
+	print("I live...");
 end
+	
 return DS;
