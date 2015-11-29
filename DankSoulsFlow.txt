@@ -1,0 +1,45 @@
+TICK
+ - playGame
+     - playerExists not dead
+         - game mode
+            - show_help
+            - spawn_dialog
+	    - godmode
+            - chicken_in_play
+		- chicken_is_loose
+                    - timer["chicken"]
+                    - if chicken_timer_up
+	     - HUD game mode messaging
+	     - timer["pedCheck"]
+		- raiseTheDoomed()
+             - timer["deathCheck"]
+               	  - checkSeen()
+ 			- loop seend peds
+			- is ped dead
+ 			- call spawnHellBorn
+			      - spawnHellBorn(thisPed, skinhash, i)
+			      -	levelCheck()
+                - getScore()
+                   - chicken_in_play?
+                       - spawn Dank
+                       - freeze chicken
+              - show wave timer
+              - updateBlipsForHellBorn()
+              - new_level_reached?
+                   - timer["new_level_reached"] 
+              - reward_earned?
+                  - reward_not_claimed?
+                      get_key_press(K)
+                         - giveReward()
+                               - level vech
+
+               - action handlers
+
+
+
+
+
+
+
+
+
