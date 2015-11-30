@@ -8,11 +8,19 @@
    - Fixed bug spawned vehicles stay on map after game over
    - Fixed death count bug on game over screen
    - You can turn cops off by setting <b>DS.settings["cops_ignore"]</b>  to true
+ 
+  <b>Videos:</b>
+    - https://www.youtube.com/watch?v=E2TMGeCzE_c
+    - https://youtu.be/IL2DNpTnwxY
+    - https://youtu.be/p4y8B9oZPFA
+    - https://youtu.be/bDt__pkFsco
+    
+  <b>Mod page:</b>
+     - https://www.gta5-mods.com/scripts/danksouls-lua
 
---------------------------------
 
 
-	<b>[What is it?]</b>
+  <b>[What is it?]</b>
 	A fun mod that transforms GTA V into a new, harder game without cops that really doesn't like you (think Dark Souls I)
 	
 	<b>[Prepare to die!]</b>
@@ -96,6 +104,7 @@ After the first level you will be given a health flask that you can use to store
 
 	Danks start out with limited accuracy and weapons, but will quickly become more accurate and deadly as you level up.
 
+    
     Only five levels of difficulty and infinite long play.  Each level will bring new enemy abilities and a single vehicle as a reward. Use it wisely, even a tank is no match for a gang of Bosses.
 	
 	There are only five levels of AI difficulty and are tied to how many waves you have completed. The more Dank Souls you are fighting at once, and the move waves you complete (bosses) the faster you will level up and the harder they will become.	
