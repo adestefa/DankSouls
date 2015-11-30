@@ -32,6 +32,7 @@ The Dark Souls of GTA V. Every ped you kill (soul), gives me three tries (Dank S
 Note: If you stay the model citizen, nothing will happen. In fact, you can do whatever you want, the cops will never show up if crash or shoot around. The game starts when you make a kill, or a ped dies near you.
 		
 <b>[Manual]</b>
+
 Dank Souls is a fun new way to play GTA V without cops. I set out to design a mod that will turn your kills into my army.
 What if I could use dead peds and change them into a series of custom AI foes, each leading up to a mini-boss fight.
 	
@@ -53,7 +54,8 @@ The end result is, the more you kill--the harder you fight, the harder the game 
 Each kill you make now has consequences. 
 When the Wave counter reaches zero it is my turn. At timed intervals (waves) I am allowed to make my move and reclaim the ead into my army. 
 
-<b>[Your urn]</b>
+<b>[Your turn]</b>
+
 Kill any number of nearby peds before the Wave timer runs out.
 
 
