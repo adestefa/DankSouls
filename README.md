@@ -21,15 +21,18 @@
 
 
   <b>[What is it?]</b>
+  
 	A fun mod that transforms GTA V into a new, harder game without cops that really doesn't like you (think Dark Souls I)
 	
 	<b>[Prepare to die!]</b>
+	
 	The Dark Souls of GTA V. Every ped you kill (soul), gives me three tries (Dank Souls) to kill you. Play against me and see how long you can stay alive. 
 	
 	Note: If you stay the model citizen, nothing will happen. In fact, you can do whatever you want, the cops will never show up if crash or shoot around. 
 		  The game starts when you make a kill, or a ped dies near you.
 		
 	<b>[Manual]</b>
+	
 	Dank Souls is a fun new way to play GTA V without cops. I set out to design a mod that will turn your kills into my army.
 	What if I could use dead peds and change them into a series of custom AI foes, each leading up to a mini-boss fight.
 	
@@ -41,19 +44,23 @@
 	
 			
 	<b>[Rules]</b>
+	
 	- After you kill any ped, you hand their soul over to me.
 	- Every ped you kill will now turn into a Dank Soul and give me three tries to kill you.
 	- Each dead ped lets me spawn a Wave (made up of 3 succesive enemies over 5 levels of difficulty)
 	- The last enemy in a wave is a boss that will get right to business, so be ready!
 
-      <b> [Game Play]</b>	
+      <b> [Game Play]</b>
+      
 	Each kill you make now has consequences. 
 	When the Wave counter reaches zero it is my turn. At timed intervals (waves) I am allowed to make my move and reclaim the dead into my army. 
 		
      <b>[Your turn]</b>
+     
 	Kill any number of nearby peds before the Wave timer runs out.
 	
     <b>[My turn]</b>
+    
 	Starts when the Wave timer reaches zero (located at the center bottom of the game screen).
     At the end of each wave countdown, my complex move consists of the following:
 	  1) turn any dead peds into Zombies
@@ -65,6 +72,7 @@
 	  [Ped] -> [Zombie] -> [Demon] -> [Boss] -> [Resource drops!]
 	
 	<b>[Wave countdown]</b>
+	
 	Depending on the level, the wave timer may count down from 300 and slowing get faster and faster. 
     
 	Note: the UI will flash 3 times when the wave is about to end, so you can focus on fighting and still know when a wave is ending without looking. 
@@ -74,7 +82,8 @@
 	Reach the boss of each wave, kill him for needed armor and rocket ammo.
 
 		
-	<b>[Know Thy Enemy]</b>	
+	<b>[Know Thy Enemy]</b>
+	
 	Each killed ped will spawn a single wave of Dank Souls.
 				
 	<b>A single Wave consists of three Dank Souls</b>
@@ -110,6 +119,7 @@ After the first level you will be given a health flask that you can use to store
 	There are only five levels of AI difficulty and are tied to how many waves you have completed. The more Dank Souls you are fighting at once, and the move waves you complete (bosses) the faster you will level up and the harder they will become.	
 
 	<b>[Levels]</b>
+	
 	1) 5 waves:  1 Bike, Enemies: Lower accuracy, simple weapons         (training) 
 
 	2) 10 waves: 1 Bulldozer, Enemies:improved accuracy, more aggressive (training)
@@ -122,6 +132,7 @@ After the first level you will be given a health flask that you can use to store
 	
 	
 	<b>[Strategy]</b>
+	
 	This mini-game is all about resource and target management. COD run-and-gun will be chewed up quickly here if you kill more than one ped at a time. 
 	Only the smart and determined, who use all their weapons and mini-map, ploting each kill and it's consequences will stay alive.
 		
@@ -132,6 +143,7 @@ After the first level you will be given a health flask that you can use to store
 	The logic starts off easy and becomes ruthless and smart quickly as you level up, don't be fooled even a tank will have a challenge when a few Bosses are around.
 	
 	<b>[Tips]</b>
+	
 	 - There are no cops, do whatever you want
 	 - If you make no kills nothing will happen
 	 - When you do kill, manage how many waves you start. 
@@ -149,6 +161,7 @@ After the first level you will be given a health flask that you can use to store
 	 I'm gonna kick your ass. I warned you.
 
 	[Installation]
+	
 	 1. Install Script Hook https://www.gta5-mods.com/tools/script-hook-v
 	 2. Install the LUA script plugin for Scripthook https://www.gta5-mods.com/tools/lua-plugin-for-script-hook-v
 	 3. Download the DankSouls.lua file
@@ -157,4 +170,5 @@ After the first level you will be given a health flask that you can use to store
 
  
 	<b>[Thanks]</b>
+	
 	Rockstar, for giving us a masterpiece. The guys that make OpenIV, and Alexander Blade who are both absolute treasures to the modding world of GTA and the modding community for creating such a great place in an insane world.
