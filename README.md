@@ -103,20 +103,17 @@
 	 - Drops: Money, health, Armour, rocket ammo
 
 <b>Chicken</b>: Will spawn Danks and run when the shooting starts. Kill five chickens to make it to the next level. With each new level, the chicken will spawn farther away. This is still an early version, open for suggestions. 
-
 (I will lower the wave counter, and spread out the Danks as a few  upcoming improvements)
 
-	
-	Each Dank will drop resources when killed, guns, ammo, money, health.. but a boss will also drop Armor and rockets.
+Each Dank will drop resources when killed, guns, ammo, money, health.. but a boss will also drop Armor and rockets.
 
 After the first level you will be given a health flask that you can use to store health packs and use on the run. The flask can only hold three drinks (health packs). You will get one pack each time you kill a boss or chicken. On lower level, all Danks will drop health packs where they die.
 
-	Danks start out with limited accuracy and weapons, but will quickly become more accurate and deadly as you level up.
+Danks start out with limited accuracy and weapons, but will quickly become more accurate and deadly as you level up.
 
-    
-    Only five levels of difficulty and infinite long play.  Each level will bring new enemy abilities and a single vehicle as a reward. Use it wisely, even a tank is no match for a gang of Bosses.
+Only five levels of difficulty and infinite long play.  Each level will bring new enemy abilities and a single vehicle as a reward. Use it wisely, even a tank is no match for a gang of Bosses.
 	
-	There are only five levels of AI difficulty and are tied to how many waves you have completed. The more Dank Souls you are fighting at once, and the move waves you complete (bosses) the faster you will level up and the harder they will become.	
+There are only five levels of AI difficulty and are tied to how many waves you have completed. The more Dank Souls you are fighting at once, and the move waves you complete (bosses) the faster you will level up and the harder they will become.	
 
 	<b>[Levels]</b>
 	
@@ -133,14 +130,14 @@ After the first level you will be given a health flask that you can use to store
 	
 	<b>[Strategy]</b>
 	
-	This mini-game is all about resource and target management. COD run-and-gun will be chewed up quickly here if you kill more than one ped at a time. 
+This mini-game is all about resource and target management. COD run-and-gun will be chewed up quickly here if you kill more than one ped at a time. 
 	Only the smart and determined, who use all their weapons and mini-map, ploting each kill and it's consequences will stay alive.
 		
-	This Mod is not for the faint of heart. The harder you fight me, the harder I fight back. The more you kill, the more you have to kill.
+This Mod is not for the faint of heart. The harder you fight me, the harder I fight back. The more you kill, the more you have to kill.
 	For those sick of fighting the cops, this mod is for you. The slower you fight the easier the system will respond. Light up a whole block on level 3 and up and you have an army ready to skull fuck you.
 	
 	"That escalated quickly" is heard a lot when playing. 
-	The logic starts off easy and becomes ruthless and smart quickly as you level up, don't be fooled even a tank will have a challenge when a few Bosses are around.
+The logic starts off easy and becomes ruthless and smart quickly as you level up, don't be fooled even a tank will have a challenge when a few Bosses are around.
 	
 	<b>[Tips]</b>
 	
