@@ -115,57 +115,58 @@ Only five levels of difficulty and infinite long play.  Each level will bring ne
 	
 There are only five levels of AI difficulty and are tied to how many waves you have completed. The more Dank Souls you are fighting at once, and the move waves you complete (bosses) the faster you will level up and the harder they will become.	
 
-	<b>[Levels]</b>
+<b>[Levels]</b>
 	
-	1) 5 waves:  1 Bike, Enemies: Lower accuracy, simple weapons         (training) 
+1) 5 waves:  1 Bike, Enemies: Lower accuracy, simple weapons         (training) 
 
-	2) 10 waves: 1 Bulldozer, Enemies:improved accuracy, more aggressive (training)
+2) 10 waves: 1 Bulldozer, Enemies:improved accuracy, more aggressive (training)
 
-	3) 15 waves: 1 Tank, Enemies: New weapons, better accuracy, faster waves!
+3) 15 waves: 1 Tank, Enemies: New weapons, better accuracy, faster waves!
 
-	4) 20 waves: 1 Annihilator, Enemies: Really insane now, better take it slow, faster waves!
+4) 20 waves: 1 Annihilator, Enemies: Really insane now, better take it slow, faster waves!
 
-	5) 30 waves: 1 Annihilator, Enemies: Impossible to stay alive. Instant waves. Good Luck.
+5) 30 waves: 1 Annihilator, Enemies: Impossible to stay alive. Instant waves. Good Luck.
 	
 	
-	<b>[Strategy]</b>
+<b>[Strategy]</b>
 	
 This mini-game is all about resource and target management. COD run-and-gun will be chewed up quickly here if you kill more than one ped at a time. 
 	Only the smart and determined, who use all their weapons and mini-map, ploting each kill and it's consequences will stay alive.
 		
 This Mod is not for the faint of heart. The harder you fight me, the harder I fight back. The more you kill, the more you have to kill.
-	For those sick of fighting the cops, this mod is for you. The slower you fight the easier the system will respond. Light up a whole block on level 3 and up and you have an army ready to skull fuck you.
+
+For those sick of fighting the cops, this mod is for you. The slower you fight the easier the system will respond. Light up a whole block on level 3 and up and you have an army ready to skull fuck you.
 	
-	"That escalated quickly" is heard a lot when playing. 
+"That escalated quickly" is heard a lot when playing. 
 The logic starts off easy and becomes ruthless and smart quickly as you level up, don't be fooled even a tank will have a challenge when a few Bosses are around.
 	
-	<b>[Tips]</b>
+<b>[Tips]</b>
 	
-	 - There are no cops, do whatever you want
-	 - If you make no kills nothing will happen
-	 - When you do kill, manage how many waves you start. 
-	 - Watch the Wave count down timer. when it reaches zero, all dead will be resurrected.
-	 - An audible deep sound will fire for each new Dank. Use this as another clue just how many new enemies are around.
-	 - Use the mini-map, solid color blips are dead, the ones with numbers are real targets
-	 - watch out for #3s! (bosses)
-	 - Blip colors: white: zombie, orange: demon, pink: boss
-	 - Use the topography to your advantage, cover, cover, cover, but don't be too far from pickups after finishing a wave.
-	 - Watch all sides!
-	 - Just like the real Dark Souls, lure packs into choke points and pick off one at a time. 
-	 - Rockets and grande launchers at higher levels can be insane. Plan accordingly. 
-	 - Pace yourself! Just like running too far ahead in Dark Souls, sometimes you simply kill too many peds and death is inevitable. 
-	 
-	 I'm gonna kick your ass. I warned you.
+ - There are no cops, do whatever you want
+ - If you make no kills nothing will happen
+ - When you do kill, manage how many waves you start. 
+ - Watch the Wave count down timer. when it reaches zero, all dead will be resurrected.
+ - An audible deep sound will fire for each new Dank. Use this as another clue just how many new enemies are around.
+ - Use the mini-map, solid color blips are dead, the ones with numbers are real targets
+ - watch out for #3s! (bosses)
+ - Blip colors: white: zombie, orange: demon, pink: boss
+ - Use the topography to your advantage, cover, cover, cover, but don't be too far from pickups after finishing a wave.
+ - Watch all sides!
+ - Just like the real Dark Souls, lure packs into choke points and pick off one at a time. 
+ - Rockets and grande launchers at higher levels can be insane. Plan accordingly. 
+ - Pace yourself! Just like running too far ahead in Dark Souls, sometimes you simply kill too many peds and death is inevitable. 
+ 
+ I'm gonna kick your ass. I warned you.
 
-	[Installation]
-	
-	 1. Install Script Hook https://www.gta5-mods.com/tools/script-hook-v
-	 2. Install the LUA script plugin for Scripthook https://www.gta5-mods.com/tools/lua-plugin-for-script-hook-v
-	 3. Download the DankSouls.lua file
-	 4. Put the <b>DankSouls.lua</b> file in your <install dir>\Grand Theft Auto V\scripts\addins folder.
-	 5. Text will appear above the mini-map when installed correctly
+[Installation]
+
+ 1. Install Script Hook https://www.gta5-mods.com/tools/script-hook-v
+ 2. Install the LUA script plugin for Scripthook https://www.gta5-mods.com/tools/lua-plugin-for-script-hook-v
+ 3. Download the DankSouls.lua file
+ 4. Put the <b>DankSouls.lua</b> file in your <install dir>\Grand Theft Auto V\scripts\addins folder.
+ 5. Text will appear above the mini-map when installed correctly
 
  
-	<b>[Thanks]</b>
+<b>[Thanks]</b>
 	
-	Rockstar, for giving us a masterpiece. The guys that make OpenIV, and Alexander Blade who are both absolute treasures to the modding world of GTA and the modding community for creating such a great place in an insane world.
+Rockstar, for giving us a masterpiece. The guys that make OpenIV, and Alexander Blade who are both absolute treasures to the modding world of GTA and the modding community for creating such a great place in an insane world.
