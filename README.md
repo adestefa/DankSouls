@@ -9,89 +9,87 @@
    - Fixed death count bug on game over screen
    - You can turn cops off by setting <b>DS.settings["cops_ignore"]</b>  to true
  
-  <b>Videos:</b>
+<b>Videos:</b>
     - https://www.youtube.com/watch?v=E2TMGeCzE_c
     - https://youtu.be/IL2DNpTnwxY
     - https://youtu.be/p4y8B9oZPFA
     - https://youtu.be/bDt__pkFsco
     
-  <b>Mod page:</b>
+
+<b>Mod page:</b>
      - https://www.gta5-mods.com/scripts/danksouls-lua
 
 
 
-  <b>[What is it?]</b>
+<b>[What is it?]</b>
   
-	A fun mod that transforms GTA V into a new, harder game without cops that really doesn't like you (think Dark Souls I)
+A fun mod that transforms GTA V into a new, harder game without cops that really doesn't like you (think Dark Souls I)
 	
-	<b>[Prepare to die!]</b>
+<b>[Prepare to die!]</b>
 	
-	The Dark Souls of GTA V. Every ped you kill (soul), gives me three tries (Dank Souls) to kill you. Play against me and see how long you can stay alive. 
+The Dark Souls of GTA V. Every ped you kill (soul), gives me three tries (Dank Souls) to kill you. Play against me and see how long you can stay alive. 
 	
-	Note: If you stay the model citizen, nothing will happen. In fact, you can do whatever you want, the cops will never show up if crash or shoot around. 
-		  The game starts when you make a kill, or a ped dies near you.
+Note: If you stay the model citizen, nothing will happen. In fact, you can do whatever you want, the cops will never show up if crash or shoot around. The game starts when you make a kill, or a ped dies near you.
 		
-	<b>[Manual]</b>
+<b>[Manual]</b>
+Dank Souls is a fun new way to play GTA V without cops. I set out to design a mod that will turn your kills into my army.
+What if I could use dead peds and change them into a series of custom AI foes, each leading up to a mini-boss fight.
 	
-	Dank Souls is a fun new way to play GTA V without cops. I set out to design a mod that will turn your kills into my army.
-	What if I could use dead peds and change them into a series of custom AI foes, each leading up to a mini-boss fight.
+A series of foes from a single ped's death is called a "Wave". Each wave has three MFs, the last being the boss.
+Instead of the undead zombie games, think Asteroids. The more you hit, the more you have to clean up, and the harder it gets to do it! Exactly like Asteroids, using simple rules we get interesting complex gameplay just starting with a few kills. 
 	
-	A series of foes from a single ped's death is called a "Wave". Each wave has three MFs, the last being the boss.
-	Instead of the undead zombie games, think Asteroids. The more you hit, the more you have to clean up, and the harder it gets to do it!
-	Exactly like Asteroids, using simple rules we get interesting complex gameplay just starting with a few kills. 
-	
-	The end result is, the more you kill--the harder you fight, the harder the game will fight back. 
+The end result is, the more you kill--the harder you fight, the harder the game will fight back. 
 	
 			
-	<b>[Rules]</b>
+<b>[Rules]</b>
 	
-	- After you kill any ped, you hand their soul over to me.
-	- Every ped you kill will now turn into a Dank Soul and give me three tries to kill you.
-	- Each dead ped lets me spawn a Wave (made up of 3 succesive enemies over 5 levels of difficulty)
-	- The last enemy in a wave is a boss that will get right to business, so be ready!
+- After you kill any ped, you hand their soul over to me.
+- Every ped you kill will now turn into a Dank Soul and give me three tries to kill you.
+- Each dead ped lets me spawn a Wave (made up of 3 succesive enemies over 5 levels of difficulty)
+- The last enemy in a wave is a boss that will get right to business, so be ready!
 
-      <b> [Game Play]</b>
-      
-	Each kill you make now has consequences. 
-	When the Wave counter reaches zero it is my turn. At timed intervals (waves) I am allowed to make my move and reclaim the dead into my army. 
-		
-     <b>[Your turn]</b>
+<b> [Game Play]</b>
      
-	Kill any number of nearby peds before the Wave timer runs out.
-	
-    <b>[My turn]</b>
+Each kill you make now has consequences. 
+When the Wave counter reaches zero it is my turn. At timed intervals (waves) I am allowed to make my move and reclaim the ead into my army. 
+
+<b>[Your urn]</b>
+Kill any number of nearby peds before the Wave timer runs out.
+
+
+<b>[My turn]</b>
     
-	Starts when the Wave timer reaches zero (located at the center bottom of the game screen).
-    At the end of each wave countdown, my complex move consists of the following:
-	  1) turn any dead peds into Zombies
-	  2) turn any dead zombies into demons
-	  3) turn any dead demons into bosses
-	  4) drop resources for each dead enemy type
+Starts when the Wave timer reaches zero (located at the center bottom of the game screen).
+At the end of each wave countdown, my complex move consists of the following:
+  1) turn any dead peds into Zombies
+  2) turn any dead zombies into demons
+  3) turn any dead demons into bosses
+  4) drop resources for each dead enemy type
 	
-	Example Dank Wave started by killing a single ped:
-	  [Ped] -> [Zombie] -> [Demon] -> [Boss] -> [Resource drops!]
+Example Dank Wave started by killing a single ped:
+  [Ped] -> [Zombie] -> [Demon] -> [Boss] -> [Resource drops!]
+
+<b>[Wave countdown]</b>
 	
-	<b>[Wave countdown]</b>
-	
-	Depending on the level, the wave timer may count down from 300 and slowing get faster and faster. 
+Depending on the level, the wave timer may count down from 300 and slowing get faster and faster. 
     
-	Note: the UI will flash 3 times when the wave is about to end, so you can focus on fighting and still know when a wave is ending without looking. 
+Note: the UI will flash 3 times when the wave is about to end, so you can focus on fighting and still know when a wave is ending without looking. 
 	If you are good enough to stay alive and kill me, I will spawn another, harder apponent at the next wave's end.
 	    	
-	Each level will be more intense than the last.
-	Reach the boss of each wave, kill him for needed armor and rocket ammo.
+Each level will be more intense than the last.
+Reach the boss of each wave, kill him for needed armor and rocket ammo.
 
 		
-	<b>[Know Thy Enemy]</b>
+<b>[Know Thy Enemy]</b>
 	
-	Each killed ped will spawn a single wave of Dank Souls.
+Each killed ped will spawn a single wave of Dank Souls.
 				
-	<b>A single Wave consists of three Dank Souls</b>
-	- First  Zombie (white  blip #1)
-	- Second Demon  (orange blip #2)
-	- Third  Boss   (pink   blip #3)
+<b>A single Wave consists of three Dank Souls</b>
+- First  Zombie (white  blip #1)
+- Second Demon  (orange blip #2)
+- Third  Boss   (pink   blip #3)
 	
-	<b>[Meet the Danks]</b>
+<b>[Meet the Danks]</b>
 	
 <b>Zombie:</b>  Simple minded, starts with pistol on lower levels with varying accuracy. Watch out, they can be deadly in packs!
 	 - Drops: Money, health, pistol/rifle ammo
