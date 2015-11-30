@@ -10,14 +10,16 @@
    - You can turn cops off by setting <b>DS.settings["cops_ignore"]</b>  to true
  
 <b>Videos:</b>
-    - https://www.youtube.com/watch?v=E2TMGeCzE_c
-    - https://youtu.be/IL2DNpTnwxY
-    - https://youtu.be/p4y8B9oZPFA
-    - https://youtu.be/bDt__pkFsco
+  
+ - https://www.youtube.com/watch?v=E2TMGeCzE_c
+ - https://youtu.be/IL2DNpTnwxY
+ - https://youtu.be/p4y8B9oZPFA
+ - https://youtu.be/bDt__pkFsco
     
 
 <b>Mod page:</b>
-     - https://www.gta5-mods.com/scripts/danksouls-lua
+
+- https://www.gta5-mods.com/scripts/danksouls-lua
 
 
 
