@@ -15,7 +15,10 @@
  - https://youtu.be/IL2DNpTnwxY
  - https://youtu.be/p4y8B9oZPFA
  - https://youtu.be/bDt__pkFsco
-    
+
+<b>Review</b>
+
+by ARON GERENCSER: http://www.gta5cheats.com/this-mod-just-made-gta-v-much-much-harder/    
 
 <b>Mod page:</b>
 
