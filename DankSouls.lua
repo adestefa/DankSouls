@@ -1,6 +1,6 @@
 --[[
 ============================================
-    Dank Souls v1.0  1:43 AM 10/21/2015
+    Dank Souls v1.9.8.5 01/23/2016
 	- Volume I: Consequences - by CoreLogic
 =============================================
 
@@ -143,7 +143,10 @@
    - Fixed bug spawned vehicles stay on map after game over
    - Fixed death count bug on game over screen
    - You can turn cops off by setting <b>DS.settings["cops_ignore"]</b>  to true
- 
+ version 1.9.8.5 01/23/2016
+  - Added bonus level
+  - New improved alien-zombie Danks
+  - New Rocket Party game mode
 ]]--
 local DS = {};
 --  Game Settings
@@ -154,7 +157,8 @@ DS.settings["cops_ignore"] = false;				-- A lot easier without the cops, set as 
 DS.settings["key_1"]=49; 						-- Game mode 1 activation key (set to '1' by default)
 DS.settings["key_2"]=50; 						-- Game mode 2 activation key (set to '2' by default)
 DS.settings["key_3"]=51; 						-- Game mode 3 activation key (set to '3' by default)
-DS.settings["key_help"]=72;						-- Game help screen activation key (set to 'h' by default)
+DS.settings["key_4"]=52; 						-- Game mode 4 activation key (set to '4' by default)
+DS.settings["key_help"]=72;	
 -- ==================================================
 -- ==================================================
 -- ===== EDIT BELOW AT OWN RISK! ====================
@@ -197,8 +201,8 @@ DS.settings["level_5_finished_waves"] = 25;
 DS.settings["level_6_game_overtime"] = 30;  -- bonus round after all levels, infinite scoring... no game over
 -- ==== LEVEL 1 ===============================
 DS.settings["level_deathCheckDelay"][1] = 800;
-DS.settings["level_weapons_zombie"][1] = GAMEPLAY.GET_HASH_KEY("WEAPON_COMBATPISTOL");
-DS.settings["level_accuracy_zombie"][1] = 50;
+DS.settings["level_weapons_zombie"][1] = GAMEPLAY.GET_HASH_KEY("WEAPON_APPISTOL");
+DS.settings["level_accuracy_zombie"][1] = 70;
 DS.settings["level_weapons_demon"][1] = GAMEPLAY.GET_HASH_KEY("WEAPON_CARBINERIFLE");
 DS.settings["level_accuracy_demon"][1] = 50;
 DS.settings["level_weapons_boss"][1] =  GAMEPLAY.GET_HASH_KEY("WEAPON_RPG");
@@ -207,7 +211,7 @@ DS.settings["level_chicken_spawn_distance"][1] = 8.0;
 -- ==== LEVEL 2 ===============================
 DS.settings["level_deathCheckDelay"][2] = 500;
 DS.settings["level_weapons_zombie"][2] = GAMEPLAY.GET_HASH_KEY("WEAPON_MICROSMG");
-DS.settings["level_accuracy_zombie"][2] = 60;
+DS.settings["level_accuracy_zombie"][2] = 85;
 DS.settings["level_weapons_demon"][2] = GAMEPLAY.GET_HASH_KEY("WEAPON_CARBINERIFLE");
 DS.settings["level_accuracy_demon"][2] = 65;
 DS.settings["level_weapons_boss"][2] =  GAMEPLAY.GET_HASH_KEY("WEAPON_RPG");
@@ -240,10 +244,19 @@ DS.settings["level_accuracy_demon"][5] = 100;
 DS.settings["level_weapons_boss"][5] =  GAMEPLAY.GET_HASH_KEY("WEAPON_RPG");
 DS.settings["level_accuracy_boss"][5] = 100;
 DS.settings["level_chicken_spawn_distance"][5] = 25.0;
+-- ==== LEVEL 6 ===============================
+DS.settings["level_deathCheckDelay"][6] = 100
+DS.settings["level_weapons_zombie"][6] = GAMEPLAY.GET_HASH_KEY("WEAPON_CARBINERIFLE");
+DS.settings["level_accuracy_zombie"][6] = 100;
+DS.settings["level_weapons_demon"][6] = GAMEPLAY.GET_HASH_KEY("WEAPON_GRENADELAUNCHER");
+DS.settings["level_accuracy_demon"][6] = 100;
+DS.settings["level_weapons_boss"][6] =  GAMEPLAY.GET_HASH_KEY("WEAPON_RPG");
+DS.settings["level_accuracy_boss"][6] = 100;
+DS.settings["level_chicken_spawn_distance"][6] = 15.0;
 --  Game State Registers (run-time)
 -- =================================
 DS.data = {};
-DS.data["version"] = "1.9.7.1";
+DS.data["version"] = "1.9.8.5";
 DS.data["seenPeds"] = {};
 DS.data["seenPedSkins"] = {};
 DS.data["seenAllPeds"] = {};
@@ -293,7 +306,7 @@ DS.data["vehicles"] = {};
 -- Dank skins
 -- ==================
 DS.hell = {}
-DS.hell["zombie"] = "u_m_y_zombie_01";
+DS.hell["zombie"] = "s_m_m_movalien_01";
 DS.hell["demon"] = "a_m_y_juggalo_01";
 DS.hell["boss"] = "s_m_y_clown_01";
 DS.hell["chicken"] = "a_c_hen";
@@ -478,6 +491,9 @@ function DS.giveReward()
 	elseif(level == 5) then
 		DS.spawnVeh("annihilator");
 		--DS.data["reward_vech_name"] = "Annihilator";
+	elseif(level == 6) then
+		DS.spawnVeh("annihilator");
+		--DS.data["reward_vech_name"] = "Annihilator";
 	end
 end
 function DS.teleport_to_coords_before_death()
@@ -590,6 +606,9 @@ function DS.giveLoadout()
 	elseif(level >= 5) then
 		DS.giveAllWeapons();
 	end
+	if(DS.settings["game_mode"] == 4) then
+		WEAPON.GIVE_DELAYED_WEAPON_TO_PED(playerPed, GAMEPLAY.GET_HASH_KEY("WEAPON_RPG"), 50, false);
+	end
 end
 function DS.giveAllWeapons()
 		print("DS::GiveAllWeapons");
@@ -650,15 +669,25 @@ function DS.makeDankClone(cloneTarget, coords)
 		AI.SET_PED_PATH_CAN_USE_LADDERS(clone, true);
 		AI.SET_PED_PATH_CAN_DROP_FROM_HEIGHT(clone, true);
 		DS.godOn(5);
+		
+		
 		-- WAVE 1
 		if(cloneTarget == DS.hell["zombie"]) then
-			WEAPON.GIVE_DELAYED_WEAPON_TO_PED(clone, DS.settings["level_weapons_zombie"][DS.data["level"]], 500, true);
+			if(DS.settings["game_mode"] == 4)then 
+				WEAPON.GIVE_DELAYED_WEAPON_TO_PED(clone, GAMEPLAY.GET_HASH_KEY("WEAPON_RPG"), 500, true);
+			else 
+				WEAPON.GIVE_DELAYED_WEAPON_TO_PED(clone, DS.settings["level_weapons_zombie"][DS.data["level"]], 500, true);
+			end
 			PED.SET_PED_ACCURACY(clone, DS.settings["level_accuracy_zombie"][DS.data["level"]]);
 			DS.setBlip(coords.x, coords.y, coords.z, 0, 1, false);
 			DS.godAddTime(200);
 		-- Wave 2
 		elseif (cloneTarget == DS.hell["demon"]) then
-			WEAPON.GIVE_DELAYED_WEAPON_TO_PED(clone, DS.settings["level_weapons_demon"][DS.data["level"]], 500, true);
+			if(DS.settings["game_mode"] == 4)then 
+				WEAPON.GIVE_DELAYED_WEAPON_TO_PED(clone, GAMEPLAY.GET_HASH_KEY("WEAPON_RPG"), 500, true);
+			else 
+				WEAPON.GIVE_DELAYED_WEAPON_TO_PED(clone, DS.settings["level_weapons_demon"][DS.data["level"]], 500, true);
+			end
 			DS.giveGrenade(coords);
 			PED.SET_PED_ACCURACY(clone, DS.settings["level_accuracy_demon"][DS.data["level"]]);
 			DS.setBlip(coords.x, coords.y, coords.z, 17, 2, false);
@@ -755,6 +784,8 @@ function DS.checkSeen()
 			local dead = ENTITY.IS_ENTITY_DEAD(thisPed);
 			-- if ped is dead, and we have a valid skin to parse
 			if(dead) then
+				DS.playSound();
+				DS.applyForce(thisPed);	
 				-- we stored the skin before, let's get it
 				local thisPedSkin = DS.data["seenPedSkins"][i];
 				if (thisPedSkin) then
@@ -882,8 +913,8 @@ function DS.levelCheck()
 		DS.data["finished_level"] = 4;
 		done = true;
 	elseif (not done and f > DS.settings["level_6_game_overtime"]) then
-		DS.data["level"] = 5;
-		DS.data["finished_level"] = 4;
+		DS.data["level"] = 6;
+		DS.data["finished_level"] = 5;
 		DS.data["bounus_round"] = true;
 		done = true;
 	end
@@ -926,6 +957,8 @@ function DS.spawnChicken()
 		coords = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(playerPed, 0.0, 20.0, 1.0);
 	elseif(DS.data["level"] == 4) then
 		coords = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(playerPed, 0.0, 25.0, 1.0);	
+	elseif(DS.data["level"] >= 5) then
+		coords = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(playerPed, 0.0, 15.0, 1.0);	
 	end
 	DS.spawnChickenAtLocation(coords);
 end			
@@ -1426,18 +1459,18 @@ function DS.tick()
 					-- select game mode screen
 					-- ========================
 					DS.drawText("DANK SOULS",  0.1, 0.49, 3.0, true, 1, 0, 0, 0);
-					DS.drawText("Rip:"..DS.data["version"], 0.21, 0.68, 0.3, false, 1, 255, 255, 255);
-					DS.drawText("by CoreLogic 2015", 0.24, 0.35, 0.5, false, 1, 255, 255, 255);
+					DS.drawText("Rip:"..DS.data["version"], 0.21, 0.72, 0.3, false, 1, 255, 255, 255);
+					DS.drawText("by CoreLogic 2016", 0.24, 0.35, 0.5, false, 1, 255, 255, 255);
 					DS.drawText("[h]elp", 0.24, 0.63, 0.5, false, 1, 255, 255, 255);
 					DS.drawText("How do you want to die?", 0.34, 0.49, 1.0, true, 1, 0, 0, 0);
-					DS.drawText("[1] Mayhem\n[2] HardCore 3 Lives.\n[3] Eat Every F@$king Chicken.", 0.45, 0.49, 1.0, true, 1, 255, 0, 0);
+					DS.drawText("[1] Mayhem\n[2] HardCore 3 Lives.\n[3] Eat Every F@$king Chicken.\n[4] Rocket Party.", 0.45, 0.49, 1.0, true, 1, 255, 0, 0);
 				else
 					-- help screen
 					-- ============
 					-- center title and controls
 					DS.drawText("DANK SOULS",  0.1, 0.49, 3.0, true, 1, 0, 0, 0);
-					DS.drawText("Rip:"..DS.data["version"], 0.21, 0.68, 0.3, false, 1, 255, 255, 255);
-					DS.drawText("by CoreLogic 2015", 0.24, 0.35, 0.5, false, 1, 255, 255, 255);
+					DS.drawText("Rip:"..DS.data["version"], 0.21, 0.72, 0.3, false, 1, 255, 255, 255);
+					DS.drawText("by CoreLogic 2016", 0.24, 0.35, 0.5, false, 1, 255, 255, 255);
 					DS.drawText("[h] back", 0.24, 0.63, 0.5, false, 1, 255, 255, 255);
 					-- center column, game modes
 					DS.drawText("1. Mayhem (Normal):", 0.32, 0.29, 1.0, false, 1, 255, 0, 0);
@@ -1450,6 +1483,9 @@ function DS.tick()
 					DS.drawText("Manage the building hoard and kill each chicken before the timer runs out.", 0.72, 0.29, 0.5, false, 0,  0, 0, 0);
 					DS.drawText("First two levels all spawned Danks will die when you kill the chicken.", 0.76, 0.29, 0.5, false, 0,  0, 0, 0);
 					DS.drawText("How many chickens can you kill?", 0.80, 0.29, 0.5, false, 0, 0, 0, 0);
+					DS.drawText("4. Rocket Party", 0.84, 0.29, 0.7, false, 1, 255, 0, 0);
+					DS.drawText("Make Rocket Raccon proud.", 0.89, 0.29, 0.5, false, 0, 0, 0, 0);
+					
 					-- left column
 					DS.drawText(" The Dark Souls of GTA V", 0.08, 0.00005, 0.65, false, 1, 255, 255, 255);
 					DS.drawText(" Volume I: Consequences", 0.12, 0.00005, 0.45, false, 1, 255, 255, 255);
@@ -1481,6 +1517,7 @@ function DS.tick()
 				if(DS.toggle["spawn_dialog"]) then
 					if (DS.timer["spawn_timer"] > 0)  then
 						local gm = DS.settings["game_mode"];
+						print("Spawn dialog gm:"..gm);
 						local lbl = "nil";
 						if(gm == 1) then
 							lbl = "Mayhem\nJust DO IT!\n";
@@ -1499,6 +1536,10 @@ function DS.tick()
 							lbl = "Eat Every F@$king Chicken!";
 							DS.data["lives"] = 0;
 						end
+						if(gm == 4) then
+							lbl = "Rocket Party";
+							DS.data["lives"] = 0;
+						end
 						-- show spawn text for each game mode, except when game is over on hardcore
 						if(DS.settings["game_mode"] == 1)then 
 							DS.displaySpawnTitle(lbl, 1.5);
@@ -1509,6 +1550,10 @@ function DS.tick()
 							DS.timer["spawn_timer"] = DS.timer["spawn_timer"] - 1;
 							DS.drawText(" The HUD turns red when you need health!", 0.35, 0.00005, 0.29, false, 0, 255, 0, 0);
 						elseif(DS.settings["game_mode"] == 2 and DS.data["lives"] > 0) then
+							DS.displaySpawnTitle(lbl, 1.5);
+							DS.timer["spawn_timer"] = DS.timer["spawn_timer"] - 1;
+							DS.drawText(" The HUD turns red when you need health!", 0.35, 0.00005, 0.29, false, 0, 255, 0, 0);
+						elseif(DS.settings["game_mode"] == 4) then
 							DS.displaySpawnTitle(lbl, 1.5);
 							DS.timer["spawn_timer"] = DS.timer["spawn_timer"] - 1;
 							DS.drawText(" The HUD turns red when you need health!", 0.35, 0.00005, 0.29, false, 0, 255, 0, 0);
@@ -1603,7 +1648,7 @@ function DS.tick()
 				end
 				-- set up score board
 				-- ==================
-				if(DS.settings["game_mode"] == 1) then
+				if(DS.settings["game_mode"] == 1 or DS.settings["game_mode"] == 4) then
 					DS.drawText(" Deaths:"..DS.data["deaths"].."\n", 0.70, 0.00005, 0.3, false, 0, r_, g_, b_);
 					DS.drawText(" [Space] to end", 0.53, 0.00005, 0.3, false, 0, 255, 255, 255);
 				end
@@ -1620,6 +1665,7 @@ function DS.tick()
 				if(DS.settings["game_mode"] == 1) then modeName=" MayHem\n ------------"; end
 				if(DS.settings["game_mode"] == 2) then modeName=" HardCore\n --------------"; end
 				if(DS.settings["game_mode"] == 3) then modeName=" Chicken\n ---------------"; end
+				if(DS.settings["game_mode"] == 4) then modeName=" Rockets\n ---------------"; end
 				DS.drawText(modeName.."\n Waves:"..#DS.data["finished_wave"].."\n Kills:"..kills.."\n Max-multi:"..DS.data["max_num_Dank"].."\n"..deathTally..chickenTally, 0.58, 0.00005, 0.3, false, 0, r_, g_, b_);
 				DS.drawText("LEVEL:"..DS.data["level"], 0.0, 0.05, 0.6, false, 0, r_, g_, b_);
 				DS.drawText("SCORE:"..DS.data["score"], 0.0, 0.76, 0.6, false, 0, r_, g_, b_);
@@ -1719,6 +1765,8 @@ function DS.tick()
 							DS.data["reward_vech_name"] = "Annihilator";
 						elseif(DS.data["level"] == 5) then
 							DS.data["reward_vech_name"] = "Annihilator";
+						elseif(DS.data["level"] == 6) then
+							DS.data["reward_vech_name"] = "Annihilator";
 						end
 						DS.drawText(" [k] Spawn "..DS.data["reward_vech_name"], 0.75, 0.0005, 0.37, false, 1, 255, 255, 0);
 					end
@@ -1768,6 +1816,21 @@ function DS.tick()
 					wait(1000);
 				end
 			end
+			-- Game Mode: Rocket Party action key
+			if(get_key_pressed(DS.settings["key_4"])) then -- 4
+				if(DS.settings["game_mode"] == 0) then
+					print("4 key pressed");
+					print("Setting game mode to 4");
+					WEAPON.GIVE_DELAYED_WEAPON_TO_PED(playerPed, GAMEPLAY.GET_HASH_KEY("WEAPON_RPG"), 500, false);
+					DS.settings["game_mode"] = 4;
+					DS.data["wave_progression"] = true;
+					DS.settings["health_as_a_resource"] = false;
+					DS.settings["cops_ignore"] = true;
+					DS.giveLoadout();
+					print("Game mode is now:"..DS.settings["game_mode"]);
+					wait(1000);
+				end
+			end			
 			-- help screen action key
 			if(get_key_pressed(DS.settings["key_help"])) then -- h
 				print("h key pressed");
@@ -1811,7 +1874,7 @@ function DS.tick()
 				if(DS.settings["game_mode"] > 0) then
 					print("space key pressed");
 					print("Setting game mode to end game");
-					if(DS.settings["game_mode"] == 1) then
+					if(DS.settings["game_mode"] == 1 or DS.settings["game_mode"] == 4) then
 						DS.gameover();
 					end
 					wait(1000);
@@ -1867,6 +1930,10 @@ function DS.force_carexplode()
 			print("explode car");
 		end
 	end
+end
+function DS.applyForce(e)
+	print("Apply force:"..e);
+	--ENTITY.SET_ENTITY_VELOCITY(e, DS.settings["force_pos_x"],DS.settings["force_pos_y"], DS.settings["force_height"]);
 end
 function DS.liftPeds()
 	local range = 30;
