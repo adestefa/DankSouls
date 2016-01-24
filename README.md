@@ -1,4 +1,11 @@
-<b>[Update 1.9.7.1</b>
+
+<b>[Update 1.9.8.5]</b>
+- Added bonus level
+- New, tougher alien-zombie Danks
+- New Rocket Party game mode
+
+
+<b>[Update 1.9.7.1]</b>
    - Mayhem now gets full load-out
    - Wanted level now rises on all modes except Chicken
    - Chicken game mode now has improved zombie spawn 
