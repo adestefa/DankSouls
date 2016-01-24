@@ -17,11 +17,11 @@
    - You can turn cops off by setting <b>DS.settings["cops_ignore"]</b>  to true
  
 <b>Videos:</b>
- - https://www.youtube.com/watch?v=a_M5X5x4NqU 
  - https://www.youtube.com/watch?v=E2TMGeCzE_c
  - https://youtu.be/IL2DNpTnwxY
  - https://youtu.be/p4y8B9oZPFA
  - https://youtu.be/bDt__pkFsco
+ - https://www.youtube.com/watch?v=a_M5X5x4NqU 
 
 <b>Review</b>
 
