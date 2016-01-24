@@ -15,7 +15,7 @@
    - Fixed bug spawned vehicles stay on map after game over
    - Fixed death count bug on game over screen
    - You can turn cops off by setting <b>DS.settings["cops_ignore"]</b>  to true
- 
+  
 <b>Videos:</b>
  - https://www.youtube.com/watch?v=E2TMGeCzE_c
  - https://youtu.be/IL2DNpTnwxY
